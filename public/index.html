@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voyage by Axiom</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.cdnfonts.com/css/kudryashev-display" rel="stylesheet">
+  <style>
+        * {
+            font-family: 'Kudryashev Display', serif;
+        }
+        
+        body {
+            box-sizing: border-box;
+            background-color: #f7e9d7;
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
+ </head>
+ <body>
+<!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-opacity-95 backdrop-blur-sm border-b border-gray-200" style="background-color: #f7e9d7;">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <h1 class="text-black text-xl font-light tracking-widest uppercase">VOYAGE BY AXIOM</h1>
+    <nav class="flex items-center space-x-8">
+      <a href="index.html" class="text-black hover:text-gray-600 transition-colors font-light">Home</a>
+      <a href="hizmet.html" class="text-black hover:text-gray-600 transition-colors font-light">Our Services</a>
+      <a href="contact.html" class="text-black hover:text-gray-600 transition-colors font-light">Contact Us</a>
+    </nav>
+   </div>
+  </header>
+
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-32">
+  <!-- Logo -->
+  <div class="mb-8 transition-all duration-500 ease-in-out">
+    <img 
+      id="heroLogo"
+      src="axiom.svg" 
+      alt="Voyage by Axiom"
+      class="w-[480px] h-auto object-contain opacity-90 transition-all duration-500 ease-in-out"
+    >
+  </div>
+
+  <!-- Texts -->
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-5xl md:text-7xl font-light text-black mb-4 leading-tight tracking-wider uppercase">
+      VOYAGE BY AXIOM
+    </h1>
+    <h2 class="text-2xl md:text-4xl font-light text-gray-800 mb-8">
+      Journey Beyond Luxury
+    </h2>
+    <p class="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+      In a rapidly changing world, true luxury is not just what we own, but the experiences we live. 
+      Voyage by Axiom exists to understand every desire and transform it into a unique journey.
+    </p>
+  </div>
+</section>
+
+<!-- Values Section -->
+<section class="py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <!-- First Row -->
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <!-- Privacy -->
+      <div class="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-100">
+        <div class="mb-6">
+          <svg width="60" height="60" viewbox="0 0 60 60" class="mx-auto">
+            <defs>
+              <lineargradient id="privacyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#C7B299" />
+                <stop offset="100%" style="stop-color:#D4C4A8" />
+              </lineargradient>
+            </defs>
+            <path d="M30 8 L42 15 L42 30 Q42 42 30 50 Q18 42 18 30 L18 15 Z" fill="url(#privacyGrad)" opacity="0.8" />
+            <rect x="26" y="26" width="8" height="10" rx="1" fill="#8B4513" opacity="0.6" />
+            <path d="M28 26 L28 23 Q28 21 30 21 Q32 21 32 23 L32 26" stroke="#8B4513" stroke-width="2" fill="none" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-light text-black mb-4">The Power of Silence</h3>
+        <p class="text-gray-700 leading-relaxed">Privacy in every step. Every detail is secured for you, and every request is protected with complete confidentiality.</p>
+      </div>
+
+      <!-- Empathy -->
+      <div class="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-100">
+        <div class="mb-6">
+          <svg width="60" height="60" viewbox="0 0 60 60" class="mx-auto">
+            <defs>
+              <lineargradient id="empathyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#E8D5B7" />
+                <stop offset="100%" style="stop-color:#C7B299" />
+              </lineargradient>
+            </defs>
+            <path d="M30 45 C22 37, 14 28, 14 20 C14 16, 17 12, 21 12 C25 12, 30 16, 30 20 C30 16, 35 12, 39 12 C43 12, 46 16, 46 20 C46 28, 38 37, 30 45 Z" fill="url(#empathyGrad)" opacity="0.8" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-light text-black mb-4">The Language of the Heart</h3>
+        <p class="text-gray-700 leading-relaxed">For us, service is not just a duty; it is a carefully crafted experience tailored to each client. We listen, understand, and act to exceed your expectations.</p>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <!-- Custom Experiences -->
+      <div class="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-100">
+        <div class="mb-6">
+          <svg width="60" height="60" viewbox="0 0 60 60" class="mx-auto">
+            <defs>
+              <lineargradient id="customGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#F7E9D7" />
+                <stop offset="100%" style="stop-color:#D4C4A8" />
+              </lineargradient>
+            </defs>
+            <path d="M30 10 L34 22 L46 22 L37 30 L40 42 L30 37 L20 42 L23 30 L14 22 L26 22 Z" fill="url(#customGrad)" opacity="0.8" />
+            <circle cx="30" cy="30" r="6" fill="none" stroke="#8B4513" stroke-width="2" opacity="0.5" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-light text-black mb-4">Stories Tailored to Your Soul</h3>
+        <p class="text-gray-700 leading-relaxed">Every journey is designed exclusively for you. Each moment transforms into a work of art, reflecting your tastes, passions, and dreams.</p>
+      </div>
+
+      <!-- Excellence -->
+      <div class="bg-gray-50 rounded-2xl p-8 card-hover border border-gray-100">
+        <div class="mb-6">
+          <svg width="60" height="60" viewbox="0 0 60 60" class="mx-auto">
+            <defs>
+              <lineargradient id="excellenceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#D4C4A8" />
+                <stop offset="50%" style="stop-color:#F7E9D7" />
+                <stop offset="100%" style="stop-color:#C7B299" />
+              </lineargradient>
+            </defs>
+            <path d="M30 8 L42 22 L30 50 L18 22 Z" fill="url(#excellenceGrad)" opacity="0.8" />
+            <path d="M30 8 L36 22 L30 26 L24 22 Z" fill="#8B4513" opacity="0.2" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-light text-black mb-4">The Art of Elegance</h3>
+        <p class="text-gray-700 leading-relaxed">Perfection hidden in details. Beyond the ordinary, we create moments that surpass your expectations. Every experience is part of a story designed just for you.</p>
+      </div>
+    </div>
+
+    <!-- Closing Section -->
+    <div class="text-center">
+      <div class="bg-gray-50 rounded-2xl p-10 max-w-4xl mx-auto border border-gray-100">
+        <p class="text-xl md:text-2xl text-gray-800 leading-relaxed">With Voyage by Axiom, every moment is special and unforgettable. Luxury, empathy, privacy, and personalized excellence… All come together just for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const logo = document.getElementById('heroLogo');
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    if (scrollY > 50) {
+      // Sayfa kaydıkça küçült
+      logo.classList.remove('w-[550px]');
+      logo.classList.add('w-[200px]', 'opacity-80');
+    } else {
+      // Sayfa yukarıdayken tekrar büyüt
+      logo.classList.remove('w-[200px]', 'opacity-80');
+      logo.classList.add('w-[480px]');
+    }
+  });
+</script>
+
+ </body>
+</html>

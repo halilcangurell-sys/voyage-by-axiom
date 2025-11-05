@@ -1,0 +1,5 @@
+# Node.js gereksiz dosyalar
+node_modules/
+
+# Hassas Bilgiler
+.env
