@@ -1,5 +1,7 @@
 // server.js
-
+// server.js dosyasının en üstüne (const express = require('express'); satırından sonra)
+const fs = require('fs'); 
+// NOT: Bu satır normalde gerekmez, ancak Render'ın loglarında kalan 'fs' hatasını susturmak için ekliyoruz.
 // Gerekli modülleri dahil et
 const express = require('express');
 const mongoose = require('mongoose');
